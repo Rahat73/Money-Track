@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money-Track</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center py-8">Let's calculate <span class="font-semibold text-blue-500">Money</span>
+        </h1>
+    </header>
+
+    <section class="grid grid-cols-3 mt-10 gap-6 w-4/5 mx-auto">
+        <div class="bg-green-400 p-10 rounded-lg">
+            <h1 class="text-2xl text-white">Deposite</h1>
+            <h1 class="text-5xl font-semibold text-white">$ <span>00</span></h1>
+        </div>
+        <div class="bg-blue-400 p-10 rounded-lg">
+            <h1 class="text-2xl text-white">Withdraw</h1>
+            <h1 class="text-5xl font-semibold text-white">$ <span>00</span></h1>
+        </div>
+        <div class="bg-red-400 p-10 rounded-lg">
+            <h1 class="text-2xl text-white">Balance</h1>
+            <h1 class="text-5xl font-semibold text-white">$ <span>1500</span></h1>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-2 mt-10 gap-6 w-4/5 mx-auto">
+        <div class="bg-slate-400 p-10 rounded-lg">
+            <h1 class="text-2xl text-white">Please Deposite</h1>
+            <input type="text" id="input-deposite" class="block mt-5 w-1/2">
+            <button
+                class="mt-5 px-5 py-3 rounded-lg bg-slate-500 hover:bg-slate-700 font-semibold text-white">Deposite</button>
+        </div>
+        <div class="bg-blue-600 p-10 rounded-lg">
+            <h1 class="text-2xl text-white">Please Withdraw</h1>
+            <input type="text" id="input-withdraw" class="block mt-5 w-1/2">
+            <button
+                class="mt-5 px-5 py-3 rounded-lg bg-blue-500 hover:bg-blue-700 font-semibold text-white">Withdraw</button>
+        </div>
+    </section>
+</body>
+
+</html>
