@@ -4,6 +4,7 @@ function checkLogin() {
 
     if (inputEmail === 'rahat@mail.com' && inputPass === 'rahat123') {
         alert('logged in successfully');
+        window.location.href = "balance-calculation.html"
     }
     else {
         alert('Wrong credentials');
