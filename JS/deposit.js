@@ -5,15 +5,15 @@ document.getElementById('deposite-btn').addEventListener('click', function () {
     const previousDeposite = parseFloat(deposite.innerText);
 
     //////     getting deposite input value     //////
-    const inputDepositeString = document.getElementById('input-deposite');
-    const inputDeposite = parseFloat(inputDepositeString.value);
+    const inputDeposite = document.getElementById('input-deposite');
+    const inputDepositeValue = parseFloat(inputDeposite.value);
 
-    if (isNaN(inputDeposite)) {
+    if (isNaN(inputDepositeValue)) {
         alert('Enter deposite value');
         return;
     }
 
-    const newdeposite = previousDeposite + inputDeposite;
+    const newdeposite = previousDeposite + inputDepositeValue;
 
     //////     setting new deposite text value     //////
     deposite.innerText = newdeposite;
@@ -22,11 +22,11 @@ document.getElementById('deposite-btn').addEventListener('click', function () {
     const balance = document.getElementById('balance-value');
     const previousBalance = parseFloat(balance.innerText);
 
-    const newBalance = previousBalance + inputDeposite;
+    const newBalance = previousBalance + inputDepositeValue;
 
     //////     setting new balance text value     //////
     balance.innerText = newBalance;
 
     //////     resetting input field     //////
-    inputDepositeString.value = '';
+    inputDeposite.value = '';
 })
