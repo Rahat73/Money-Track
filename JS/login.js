@@ -1,4 +1,4 @@
-function checkLogin() {
+document.getElementById('submit-btn').addEventListener('click', function () {
     const inputEmail = document.getElementById('input-email').value;
     const inputPass = document.getElementById('input-pass').value;
 
@@ -9,4 +9,4 @@ function checkLogin() {
     else {
         alert('Wrong credentials');
     }
-}
+})
